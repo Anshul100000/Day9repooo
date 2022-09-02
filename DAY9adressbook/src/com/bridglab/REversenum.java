@@ -1,0 +1,22 @@
+package com.bridglab;
+
+public class REversenum {
+	
+	public static void main (String[]args) {
+        //variables initialization
+        int num = 33, reverse = 0, rem;
+
+
+        //loop to find reverse number
+        while (num != 0)
+        {
+            rem = num % 10;
+            reverse = reverse * 10 + rem;
+            num /= 10;
+        };
+
+        //output
+        System.out.println ("Reversed Number: " + reverse);
+    }
+
+}
